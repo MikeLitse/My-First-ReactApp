@@ -2,7 +2,10 @@ import Header from './Header.jsx'
 
 function App() {
   return (
-    <Header/>
+    <div className='maindiv'>
+      <Header/>
+    </div>
+    
   );
 }
 
