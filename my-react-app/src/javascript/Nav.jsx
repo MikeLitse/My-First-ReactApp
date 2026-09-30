@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Home from './Home.jsx';
 import About from './About.jsx';
+import Links from './Links.jsx';
 
 function Nav() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -8,11 +9,13 @@ function Nav() {
   const switchPage = () => {
     switch (currentPage) {
       case 'home':
-        return <Home />;
+        return <Home/>;
       case 'about':
-        return <About />;
+        return <About/>;
+      case 'links':
+        return <Links/>;
       default:
-        return <Home />;
+        return <Home/>;
     }
   };
 
@@ -22,13 +25,7 @@ function Nav() {
         <div>
           <button onClick={() => setCurrentPage('home')}> Home </button>
           <button onClick={() => setCurrentPage('about')}> About </button>
-          <a 
-            href="https://github.com/MikeLitse" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+          <button onClick={() => setCurrentPage('links')}> Links </button>
         </div>
       </nav>
 
