@@ -2,9 +2,13 @@ import Header from './Header.jsx'
 
 function App() {
   return (
-    <div className='maindiv'>
-      <Header/>
-    </div>
+    <>
+      <title>Litseselidis Michail</title>
+      <body>
+        <Header/>
+      </body>
+    </>
+    
     
   );
 }
